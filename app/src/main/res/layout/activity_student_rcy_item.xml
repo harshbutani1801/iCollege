@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRcyItem"
+    android:background="@drawable/form_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="STUDENT DETAILS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/id_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginBottom="20dp"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mail_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mobile_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="STUDENT ID - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="STUDENT NAME - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="ROLL NUMBER - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="EMAIL ADDRESS - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="MOBILE NUMBER - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="DEPARTMENT - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="BRANCH - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="CLASS - "
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="SEMESTER - "
+                android:fontFamily="@font/regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_email"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_class"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_stu_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

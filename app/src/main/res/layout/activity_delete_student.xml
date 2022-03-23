@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteStudent"
+    android:background="@drawable/form_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="DELETE STUDENT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/l2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/id_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STUDENT ID - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FULL NAME - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mail_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENROLLMENT NO. - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mobile_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOBILE NO.- "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/designation"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:fontFamily="@font/regular"
+                android:text="DEPARTMENT - "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_stu_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRANCH - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEMESTER - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/designation"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLASS - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l3"
+        android:gravity="bottom|right"
+        android:layout_margin="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_student_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Delete Student"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

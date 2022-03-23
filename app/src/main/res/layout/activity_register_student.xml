@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterStudent"
+    android:background="@drawable/form_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="REGISTER STUDENT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/l2"
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Department :"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/light"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="18dp"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_dept_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:text="Branch :"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/light"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="18dp"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:text="Semester :"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/light"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="18dp"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_semester"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Class :"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/light"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="18dp"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_class"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@id/btn_add_class"
+                        android:layout_width="wrap_content"
+                        android:text="Add Class"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp">
+                    </com.google.android.material.button.MaterialButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:layout_below="@+id/l3"
+            android:layout_margin="5dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Next"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp">
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+</RelativeLayout>

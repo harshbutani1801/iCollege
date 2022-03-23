@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyAttendance"
+    android:background="@drawable/form_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="MODIFY ATTENDANCE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_date"-->
+                <!--                    android:layout_width="150dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Select Date"-->
+                <!--                    android:textSize="16dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.168"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    app:layout_constraintVertical_bias="0.082" />-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_date"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Select Date"
+                    app:cornerRadius="10dp" >
+
+                </com.google.android.material.button.MaterialButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Date - "
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bold"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content">-->
+
+        <!--                <com.google.android.material.button.MaterialButton-->
+        <!--                    android:id="@+id/btn_time"-->
+        <!--                    android:layout_width="135dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    android:text="Select Time"-->
+        <!--                    app:cornerRadius="10dp" >-->
+
+        <!--                </com.google.android.material.button.MaterialButton>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:textSize="18sp"-->
+        <!--                    android:text="Time - "-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:paddingLeft="10dp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tv_time"-->
+        <!--                    android:layout_width="140dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:textSize="18sp"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:paddingLeft="10dp"/>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Department :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="05dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Branch :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="05dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Semester :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="05dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Class :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="05dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Subject :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="05dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_dept_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_semester"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spn_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/Spinner"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:textColorHint="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:text="Next"
+            app:cornerRadius="20dp"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+</RelativeLayout>

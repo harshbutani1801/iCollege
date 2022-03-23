@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyDashboard"
+    android:background="@drawable/dashboard_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="WELCOME BACK"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nexa_bold"
+            android:text="FACULTY"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_take_attendance"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/add_attendance"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TAKE ATTENDANCE"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="07dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_view_stu_attendance"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/view_attendance"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW STUDENT ATTENDANCE"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:layout_marginTop="07dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_mdf_attendance"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardBackgroundColor="@color/card_color">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/modify_attendance"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="MODIFY ATTENDANCE"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_view_student"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/view_student"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW STUDENT"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="07dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/btn_take_attendance"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="119dp"-->
+<!--        android:layout_marginTop="274dp"-->
+<!--        android:layout_marginEnd="110dp"-->
+<!--        android:layout_marginBottom="393dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:text="Take Attedance" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_mdy_attendance"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="115dp"-->
+<!--        android:layout_marginTop="360dp"-->
+<!--        android:layout_marginEnd="114dp"-->
+<!--        android:layout_marginBottom="307dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:text="Modify Attedance" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_view_student"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="116dp"-->
+<!--        android:layout_marginTop="451dp"-->
+<!--        android:layout_marginEnd="113dp"-->
+<!--        android:layout_marginBottom="216dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:text="View Students" />-->
+
+    <!--    <LinearLayout-->
+<!--        android:layout_below="@id/ll2"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="2"-->
+<!--            android:gravity="center_horizontal">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_manageuser"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                app:cardBackgroundColor="@color/darkgray">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/users"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="MANAGE USERS"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_managestudent"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardBackgroundColor="@color/darkgray">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/student"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="MANAGE STUDENT"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="2"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="20dp">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_createclass"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                app:cardBackgroundColor="@color/darkgray">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/training"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="CREATE CLASS"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/btn_addcourse"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="150dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="150dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:cardCornerRadius="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:cardBackgroundColor="@color/darkgray">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:orientation="vertical">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="60dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="60dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:src="@drawable/course"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_gravity="center_horizontal"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:text="ADD COURSE"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginTop="07dp"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_managedepartment"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardBackgroundColor="@color/darkgray">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/department"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="MANAGE DEPARTMENT"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="2"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="20dp">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_adddesignation"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                app:cardBackgroundColor="@color/darkgray">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/designation"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ADD DESIGNATION"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/btn_removedesignation"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardBackgroundColor="@color/darkgray">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/remove"-->
+<!--                        android:layout_gravity="center_horizontal"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="REMOVE  DESIGNATION"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginTop="07dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+</RelativeLayout>

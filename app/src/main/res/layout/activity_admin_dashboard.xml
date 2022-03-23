@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashboard"
+    android:background="@drawable/dashboard_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/profile" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="WELCOME BACK"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nexa_bold"
+            android:text="ADMIN"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_below="@id/ll2"
+        android:id="@+id/hor"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_g"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:singleSelection="true">
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/mg_users"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@color/check_backcolor">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/users"-->
+<!--                    app:shapeAppearanceOverlay="@style/circle"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Manage Users"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/mg_students"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/student"-->
+<!--                    app:shapeAppearanceOverlay="@style/circle"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Manage Students"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/mg_dept"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/department"-->
+<!--                    app:shapeAppearanceOverlay="@style/circle"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Manage Department"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/mg_class"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/training"-->
+<!--                    app:shapeAppearanceOverlay="@style/circle"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Class Room"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/mg_desg"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/designation"-->
+<!--                    app:shapeAppearanceOverlay="@style/circle"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Manage Designation"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--            </LinearLayout>-->
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mg_user_chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/check_backcolor2"
+                app:chipMinHeight="50dp"
+                android:text="Manage Users" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mg_stu_chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipMinHeight="50dp"
+                android:text="Manage Students" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mg_dept_chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipMinHeight="50dp"
+                android:text="Manage Department" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mg_class_chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipMinHeight="50dp"
+                android:text="Create Class" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mg_desg_chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipMinHeight="50dp"
+                android:text="Manage Designation" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_view"
+        android:layout_below="@id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_view2"
+        android:layout_below="@id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_view3"
+        android:layout_below="@id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_view4"
+        android:layout_below="@id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_view5"
+        android:layout_below="@id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+    </LinearLayout>
+
+</RelativeLayout>

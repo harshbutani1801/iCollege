@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:background="@drawable/form_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/id_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginBottom="20dp"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mail_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mobile_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/designation"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department_detail"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/designation"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="USER ID - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="NAME - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="EMAIL ADDRESS - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="MOBILE NO. - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="POSITION - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="DEPARTMENT - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="BRANCH - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="DESIGNATION - "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_position"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+            <TextView
+                android:id="@+id/tv_user_desg"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="N/A"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

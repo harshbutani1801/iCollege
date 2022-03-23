@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteUser"
+    android:background="@drawable/form_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="DELETE USER"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_below="@+id/ll1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingRight="5dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="User ID :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="Full Name :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="Position :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="Email Address :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="Mobile Number :"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="Department :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="Branch :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="Designation :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_margin="8dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingRight="14dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_id"-->
+<!--                    android:layout_width="174dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_position"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_email"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_mobile"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_dept"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_branch"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_user_desg"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:hint="N/A"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:fontFamily="@font/regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/btn_del"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:src="@drawable/delete_user_btn" />-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/l2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/id_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER ID - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/name_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FULL NAME - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mail_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/designation"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSITION - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mobile_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOBILE NO.- "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/designation"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:fontFamily="@font/regular"
+                android:text="DEPARTMENT - "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_user_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRANCH - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/department_detail"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESIGNATION - "
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_desg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l3"
+        android:gravity="bottom|right"
+        android:layout_margin="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Delete User"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

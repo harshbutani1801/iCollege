@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="25dp"
+    app:layout_constraintCircleRadius="40dp">
+
+    <LinearLayout
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Department :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="07dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Branch :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="07dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Semester :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="07dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Class :"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center_vertical"
+                    android:layout_margin="07dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_dept_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="07dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="07dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_sem_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="07dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+<!--                <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                    android:id="@+id/spn_dept_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:spinnerMode="dialog"-->
+<!--                    android:popupTheme="@style/Spinner"-->
+<!--                    android:theme="@style/Theme.AppCompat.Light"-->
+<!--                    android:textColorHint="@color/white"-->
+<!--                    android:layout_margin="07dp"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                    android:id="@+id/spn_branch_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:spinnerMode="dialog"-->
+<!--                    android:popupTheme="@style/Spinner"-->
+<!--                    android:theme="@style/Theme.AppCompat.Light"-->
+<!--                    android:textColorHint="@color/white"-->
+<!--                    android:layout_margin="07dp"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                    android:id="@+id/spn_semester"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:spinnerMode="dialog"-->
+<!--                    android:popupTheme="@style/Spinner"-->
+<!--                    android:theme="@style/Theme.AppCompat.Light"-->
+<!--                    android:textColorHint="@color/black"-->
+<!--                    android:layout_margin="07dp"/>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tv_class_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000000"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:counterMaxLength="20"
+                    app:counterOverflowTextColor="@color/black"
+                    app:counterTextColor="@color/black"
+                    app:helperTextTextColor="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="#000000"
+                    app:prefixTextColor="#000000"
+                    app:suffixTextColor="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_class_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:hint="Enter Class Name"
+                        android:inputType="textCapCharacters"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:shadowColor="@color/black"
+                        android:textColorLink="#000000"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@id/btn_add_class"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:text="Create Class"-->
+<!--            app:cornerRadius="30dp">-->
+<!--            -->
+<!--        </com.google.android.material.button.MaterialButton>-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_class"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="ADD CLASS"
+            app:cornerRadius="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_margin="10dp">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--    android:id="@+id/cardView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:focusable="true"-->
+<!--    app:cardBackgroundColor="#2D2D2D"-->
+<!--    app:cardCornerRadius="10dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/l1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_gravity="left">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_student_name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/l2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_student_roll"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/l3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_gravity="right">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_student_attendance"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--                <ProgressBar-->
+                <!--                    android:id="@+id/progressBar"-->
+                <!--                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:focusable="auto"-->
+                <!--                    android:hapticFeedbackEnabled="true"-->
+                <!--                    android:progress="80"-->
+                <!--                    android:progressDrawable="@drawable/circle"-->
+                <!--                    android:visibility="visible" />-->
+
+                <!--                <com.github.lzyzsd.circleprogress.CircleProgress-->
+                <!--                    android:id="@+id/circle_progress"-->
+                <!--                    android:layout_marginLeft="50dp"-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="100dp"-->
+                <!--                    custom:circle_progress="20"/>-->
+
+<!--                <com.dinuscxj.progressbar.CircleProgressBar-->
+<!--                    android:id="@+id/pg_bar"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    app:progress_style="line"-->
+<!--                    app:progress_text_color="@color/white"-->
+<!--                    app:progress_text_size="12dp"-->
+<!--                    app:progress_stroke_width="2dp"-->
+<!--                    app:progress_start_color="#00a6a6"-->
+<!--                    app:progress_end_color="#00a6a6"-->
+<!--                    app:progress_background_color="@color/white"-->
+<!--                    app:progress_start_degree="-90"-->
+<!--                    app:drawBackgroundOutsideProgress="true"-->
+<!--                    app:progress_shader="linear"-->
+<!--                    app:progress_stroke_cap="round"-->
+<!--                    app:line_width="4dp"-->
+<!--                    app:line_count="30"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATTENDANCE"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/light"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/tv_stu_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:textAlignment="center"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/bold"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="NAME - "
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stu_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/bold"
+                        android:hint=""
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="BRANCH - "
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stu_branch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/bold"
+                        android:hint=""
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="DEPARTMENT - "
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stu_dept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/bold"
+                        android:hint=""
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_dept"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/add_department"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="07dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEPARTMENT"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_remove_department"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/delete_account"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DELETE"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="07dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEPARTMENT"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_branch"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/add_branch"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD BRANCH"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="07dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_remove_branch"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/delete_branch"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DELETE BRANCH"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="07dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateStudent"
+    android:background="@drawable/form_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:textAlignment="center"
+            android:text="UPDATE STUDENT DATA"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Student ID :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_stu_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_stu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:fontFamily="@font/regular"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_stu_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_stu_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:fontFamily="@font/regular"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_stu_mobile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_stu_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:fontFamily="@font/regular"
+                android:inputType="number"
+                android:maxLength="13"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Enrollment No:"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginStart="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:text="Semester :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginStart="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_stu_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="N/A"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/light"
+                android:gravity="center_vertical"
+                android:text="Department :"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_stu_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_change_student_dept"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Change"
+                    android:textColor="@color/white"
+                    app:cornerRadius="20dp"/>
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/light"
+                android:gravity="center_vertical"
+                android:text="Branch :"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_stu_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_change_student_branch"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Change"
+                    android:textColor="@color/white"
+                    app:cornerRadius="20dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/light"
+                android:gravity="center_vertical"
+                android:text="Class :"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_stu_class"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_change_student_class"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Change"
+                    android:textColor="@color/white"
+                    app:cornerRadius="20dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_student_update"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Update Student"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

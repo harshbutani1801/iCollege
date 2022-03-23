@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner" tools:ignore="MissingPrefix">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:radius">40dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="popup" parent="Widget.AppCompat.Light.DropDownItem.Spinner" tools:ignore="MissingPrefix">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:radius">40dp</item>
+        <item name="android:backgroundColor">gray</item>
+    </style>
+</selector>

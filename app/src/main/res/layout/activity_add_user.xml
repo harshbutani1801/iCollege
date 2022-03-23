@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUser"
+    android:background="@drawable/form_background"
+    android:hapticFeedbackEnabled="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dashboard"
+            android:text="ADD USER"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/l2"
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_userid"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColorHint="#000000"
+                app:boxCornerRadiusBottomEnd="40dp"
+                app:boxCornerRadiusBottomStart="40dp"
+                app:boxCornerRadiusTopEnd="40dp"
+                app:boxCornerRadiusTopStart="40dp"
+                app:boxStrokeColor="@color/black"
+                app:counterMaxLength="20"
+                app:counterOverflowTextColor="@color/black"
+                app:counterTextColor="@color/black"
+                app:helperTextTextColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:placeholderTextColor="#000000"
+                app:prefixTextColor="#000000"
+                app:suffixTextColor="#000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="number"
+                    android:hint="User ID"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorLink="#000"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_full_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:fontFamily="@font/regular"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:textAlignment="center"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:fontFamily="@font/regular"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_mobile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            app:boxStrokeColor="@color/black"
+            app:counterMaxLength="20"
+            app:counterOverflowTextColor="@color/black"
+            app:counterTextColor="@color/black"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:placeholderTextColor="#000000"
+            app:prefixTextColor="#000000"
+            app:suffixTextColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:fontFamily="@font/regular"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorLink="#000"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_usertype"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:spinnerMode="dialog"
+                android:popupTheme="@style/Spinner"
+                android:entries="@array/position"
+                android:theme="@style/Theme.AppCompat.Light"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="39dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_faculty_dept"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:spinnerMode="dialog"
+                android:popupTheme="@style/Spinner"
+                android:theme="@style/Theme.AppCompat.Light"
+                android:textColorHint="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_faculty_branch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:spinnerMode="dialog"
+                android:popupTheme="@style/Spinner"
+                android:theme="@style/Theme.AppCompat.Light"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="45dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation :"
+                android:textColor="@color/black"
+                android:fontFamily="@font/light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_faculty_desg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:spinnerMode="dialog"
+                android:popupTheme="@style/Spinner"
+                android:theme="@style/Theme.AppCompat.Light"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_user"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Add User"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

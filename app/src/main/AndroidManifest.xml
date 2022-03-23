@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.icollege">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ICollege">
+        <activity android:name=".SubjectAttendance2" android:noHistory="true"></activity>
+        <activity android:name=".OverallAttendance2" android:noHistory="true"></activity>
+        <activity
+            android:name=".StudentAttendanceOverall"
+            android:noHistory="true" />
+        <activity
+            android:name=".SubjectAttendance"
+            android:noHistory="true" />
+        <activity
+            android:name=".OverallAttendance"
+            android:noHistory="true" />
+        <activity
+            android:name=".BlankActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".UserProfile"
+            android:noHistory="true" />
+        <activity
+            android:name=".StudentAttendanceModify"
+            android:noHistory="true" />
+        <activity
+            android:name=".StudentAttendanceData"
+            android:noHistory="true" />
+        <activity
+            android:name=".ViewStudentAttendance"
+            android:noHistory="true" />
+        <activity
+            android:name=".ModifyAttendance"
+            android:noHistory="true" />
+        <activity
+            android:name=".CreateNewPassword"
+            android:noHistory="true" />
+        <activity
+            android:name=".OTPVerify"
+            android:noHistory="true" />
+        <activity
+            android:name=".OTPActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddSubject"
+            android:noHistory="true" />
+        <activity
+            android:name=".StudentAttedance"
+            android:noHistory="true" />
+        <activity
+            android:name=".TakeAttendance"
+            android:noHistory="true" />
+        <activity
+            android:name=".StudentRcyItem"
+            android:noHistory="true" />
+        <activity
+            android:name=".StudentPage"
+            android:noHistory="true" />
+        <activity
+            android:name=".FacultyRcyItem"
+            android:noHistory="true" />
+        <activity
+            android:name=".FacultyPage"
+            android:noHistory="true" />
+        <activity
+            android:name=".HeadDashboard"
+            android:noHistory="true" />
+        <activity
+            android:name=".RemoveDesignation"
+            android:noHistory="true" />
+        <activity
+            android:name=".RemoveBranch"
+            android:noHistory="true" />
+        <activity
+            android:name=".RemoveDepartment"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddBranch"
+            android:noHistory="true" />
+        <activity
+            android:name=".ChangePassword"
+            android:noHistory="true" />
+        <activity
+            android:name=".UpdateProfile"
+            android:noHistory="true" />
+        <activity
+            android:name=".RegisterStudent"
+            android:noHistory="true" />
+        <activity
+            android:name=".ProfilePage"
+            android:noHistory="true" />
+        <activity
+            android:name=".DeleteUser"
+            android:noHistory="true" />
+        <activity
+            android:name=".CreateClass"
+            android:noHistory="true" />
+        <activity
+            android:name=".FacultyDashboard"
+            android:noHistory="true" />
+        <activity
+            android:name=".DeleteStudent"
+            android:noHistory="true" />
+        <activity
+            android:name=".UpdateStudent"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddStudent"
+            android:noHistory="true" />
+        <activity
+            android:name=".UpdateUser"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddUser"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddDepartment"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddDesignation"
+            android:noHistory="true" />
+        <activity
+            android:name=".PrincipalDashboard"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminDashboard"
+            android:noHistory="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="true" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

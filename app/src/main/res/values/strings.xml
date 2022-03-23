@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">iCollege</string>
+    <string-array name="position">
+        <item>Select Position</item>
+        <item>Faculty</item>
+        <item>Head</item>
+        <item>Principal</item>
+    </string-array>
+</resources>
